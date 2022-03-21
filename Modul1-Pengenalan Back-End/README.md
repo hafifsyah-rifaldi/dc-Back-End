@@ -17,3 +17,28 @@ Front-End berperan pada seluruh hal yang dapat Anda lihat, rasakan, dan interaks
 Lalu di mana peran Back-End? Karena Anda konsumen, tentu peran Back-End tak terlihat dan tidak diketahui oleh Anda. Contohnya seperti teknik barista membuat kopi, apa dan bagaimana cara mengoperasikan mesin kopi, laporan keuangan, biaya sewa kedai, dan hal-hal dapur tak terlihat pelanggan lainnya. Tentu Anda tak tahu menahu kan? Yang penting, kopi yang Anda pesan sampai di meja Anda. Walaupun tak terlihat oleh konsumen secara langsung, peran Back-End sangatlah vital untuk menunjang kedai kopi dapat tetap beroperasi. Dalam sebuah sistem aplikasi, segala urusan yang tak terlihat oleh pengguna seperti bisnis logic, database, keamanan data, kestabilan server menjadi tanggung jawab Back-End Developer.
 
 Jadi sekarang Anda sudah tahu kan apa itu Back-End dan peranan dalam sebuah sistem aplikasi?
+
+# Ikhtisar
+
+Anda berada di akhir dari modul Pengenalan Back-End. Mari kita uraikan materi yang sudah Anda pelajari untuk mempertajam pemahaman.
+
+- Anda sudah mengetahui istilah Back-End dan Front-End Developer.
+- Anda sudah mengetahui apa itu server.
+- Anda sudah mengetahui bagaimana server dan client berkomunikasi.
+- Anda sudah mencoba berkomunikasi dengan server melalui cURL sebagai client.
+- Anda sudah mengetahui apa itu web server dan web service.
+- Anda sudah mengetahui REST API sebagai salah satu arsitektur dalam membangun web service.
+- Anda sudah mengetahui format yang digunakan dalam tanggapan (respons) dan mengirimkan permintaan (request) pada arsitektur REST API.
+- Anda sudah mengetahui penggunaan dari HTTP verbs/method dari REST API.
+- Anda sudah mengetahui HTTP Response Code dan cara penggunaan code yang tepat.
+- Anda sudah mengetahui bagaimana mendesain URL pada REST API dengan baik.
+
+## Referensi
+
+[1]: Paessler, “Server,” Paessler, Server - Definition and details. [Daring]. Tersedia: https://www.paessler.com/it-explained/server.
+
+[2]: IBM, IBM Knowledge Center. [Daring]. Tersedia: https://www.ibm.com/support/knowledgecenter/SSGMCP_5.3.0/com.ibm.cics.ts.internet.doc/topics/dfhtl21.html.
+
+[3]: IBM, IBM Knowledge Center. [Daring]. Tersedia: https://www.ibm.com/support/knowledgecenter/SSGMCP_5.3.0/com.ibm.cics.ts.internet.doc/topics/dfhtl22.html.
+
+[4]: Badger, “The name,” Everything curl. [Daring]. Tersedia: https://everything.curl.dev/project/name.
