@@ -8,4 +8,4 @@ const server = new Server({
 */
 
 /* // perintah ini tidak akan berjalan
-node -e 'process.env.foo = "bar"' && echo $foo */
+> node -e 'process.env.foo = "bar"' && echo $foo */
