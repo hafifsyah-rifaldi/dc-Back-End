@@ -1,0 +1,11 @@
+{
+  "name": "modul2-dasarnode",
+  "version": "1.0.0",
+  "description": "Setelah Anda mengetahui teori tentang back-end, server, pola komunikasi server dengan client, serta REST API, _what’s next_? Yup! selanjutnya untuk menjadi seorang Back-End Developer tentu Anda perlu mengetahui bekal yang harus dimiliki dalam membangun sebuah aplikasi back-end atau web service.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
