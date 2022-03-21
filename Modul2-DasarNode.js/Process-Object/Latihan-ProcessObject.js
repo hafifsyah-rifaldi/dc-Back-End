@@ -1,4 +1,4 @@
-const initialMemoryUSage = process.memoryUsage().heapUsed; // TODO 1
+const initialMemoryUsage = process.memoryUsage().heapUsed; // TODO 1
 const yourName = process.argv[2];  // TODO 2
 const environment = process.env.NODE_ENV; // TODO 3
 
