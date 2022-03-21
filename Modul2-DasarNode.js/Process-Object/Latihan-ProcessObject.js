@@ -20,5 +20,6 @@ TODO 4 : Isi dengan nilai heapUsed dari instance process.memoryUsage.
 */
 
 /* Setelah mengerjakan seluruh TODO, eksekusi berkas JavaScript dengan perintah:
-    > SET NODE_ENV=development && node ./process-object/index.js <Nama Anda> 
+    > SET NODE_ENV=development && node ./process-object/latihan-processobject.js <Nama Anda>     <<< //! Run di CMD WINDOWS
+    > SET NODE_ENV=development ; node ./process-object/latihan-processobject.js <Nama Anda>     <<< //! Run di Powershell
  */
