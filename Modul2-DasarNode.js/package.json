@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "events": "^3.3.0",
     "iodash": "^0.0.1-security",
     "lodash": "^4.17.21",
     "moment": "^2.29.1"
