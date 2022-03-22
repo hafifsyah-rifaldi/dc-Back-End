@@ -25,3 +25,17 @@ Modul kali ini memiliki prasyarat sebelum Anda mengikutinya. Selain kemampuan Ja
 - Node.js <br/>
   Pastikan komputer Anda sudah terpasang Node.js dengan minimal versi 12 atau lebih tinggi. Untuk mengetahui versi Node.js yang terpasang, silakan tulis perintah ini pada Terminal atau CMD.<br/>
   > node -v
+
+## Ikhtisar
+
+Anda berada di akhir dari modul Node.js Back-End Basic. Mari kita uraikan materi yang sudah Anda pelajari untuk mempertajam pemahaman.
+
+- Anda sudah mengetahui apa itu Node.js.
+- Anda sudah mampu membuat proyek Node.js.
+- Anda sudah mengetahui cara menjalankan kode JavaScript melalui Node REPL maupun berkas JavaScript.
+- Anda sudah mengetahui apa itu global object pada Node.js
+- Anda sudah mengetahui fungsi dan mempraktikkan penggunaan process object.
+- Anda sudah mengetahui dan mempraktikkan teknik modularisasi pada Node.js.
+- Anda sudah mengetahui dan mempraktikkan events.
+- Anda sudah mengetahui dan mempraktikkan filesystem.
+- Anda sudah mengetahui dan mempraktikkan teknik stream.
