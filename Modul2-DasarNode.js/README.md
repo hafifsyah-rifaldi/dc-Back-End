@@ -39,3 +39,13 @@ Anda berada di akhir dari modul Node.js Back-End Basic. Mari kita uraikan materi
 - Anda sudah mengetahui dan mempraktikkan events.
 - Anda sudah mengetahui dan mempraktikkan filesystem.
 - Anda sudah mengetahui dan mempraktikkan teknik stream.
+
+### Referensi
+
+[1] Github, The State of the Octoverse. [Daring]. Tersedia: https://octoverse.github.com/.
+
+[2] O. J. S. F. Node.js, “The built-in globals in Node.js,” Node.js. [Daring]. Tersedia: https://nodejs.org/en/knowledge/getting-started/globals-in-node-js/.
+
+[3] JavaScript Info, “Modules, introduction,” The Modern JavaScript Tutorial, 01-Nov-2020. [Daring]. Tersedia: https://javascript.info/modules-intro.
+
+[4] A. Silberschatz, G. Cagne, and G. Peter Baer, “Chapter 4. Processes,” in Operating system concepts with Java (Sixth ed.), John Wiley & Sons.
