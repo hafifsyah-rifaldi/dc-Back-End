@@ -1,7 +1,9 @@
 const http = require('http');
 
 const requestListener = (request, response) => {
-    response.setHeader('Content-Type', 'text/html');
+    // mengubah conten type text/html -> application/json
+    response.setHeader('Content-Type', 'application/json');
+    response.setHeader('X-Powered-By', 'NodeJS');
     
 
     // * Menambahkan Handling Request Method dan properti url
