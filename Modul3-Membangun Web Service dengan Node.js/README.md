@@ -15,3 +15,4 @@ Yeay! Pada modul ini kita akan membuat web service menggunakan JavaScript, hal y
 - [halaman MDN mengenai HTTP Status](https://developer.mozilla.org/id/docs/Web/HTTP/Status)
 - [Common Types dari MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types)
 - [Dokumentasi HAPI](https://hapi.dev/tutorials/?lang=en_US)
+- [referensi API Hapi](https://hapi.dev/api/?v=20.1.0#request-properties)
