@@ -46,9 +46,11 @@ const requestListener = (request, response) => {
     } else {
         // ! TODO 1: logika respons bila url bukan '/' atau '/about'
         response.statusCode = 404;
-        response.end('<h1>Halaman tidak ditemukan!</h1>');
+        // mengubah response dari hmtl menjadi format json
+        response.end(JSON.stringify({
+            message: 'Halaman tidak ditemukan!',
+        }));
     }
-
 };
 
 
