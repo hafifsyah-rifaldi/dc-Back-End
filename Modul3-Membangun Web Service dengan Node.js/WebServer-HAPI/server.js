@@ -44,4 +44,8 @@ curl -X GET http://localhost:5000/hello/dicoding
  output: Hello, dicoding!
 curl -X GET http://localhost:5000/hello
  output: Hello, stranger!
+curl -X GET http://localhost:5000/hello/dicoding?lang=id
+ output: Hai, dicoding!
+curl -X GET http://localhost:5000/hello/dicoding
+ output: Hello, dicoding!
 */
