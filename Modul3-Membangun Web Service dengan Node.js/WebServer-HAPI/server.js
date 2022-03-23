@@ -40,5 +40,8 @@ curl -X GET http://localhost:5000/test
  output: Halaman tidak ditemukan
 curl -X POST http://localhost:5000
  output: Halaman tidak dapat diakses dengan method tersebut
-
+curl -X GET http://localhost:5000/hello/dicoding
+ output: Hello, dicoding!
+curl -X GET http://localhost:5000/hello
+ output: Hello, stranger!
 */
