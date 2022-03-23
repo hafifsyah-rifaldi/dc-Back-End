@@ -13,3 +13,5 @@ Yeay! Pada modul ini kita akan membuat web service menggunakan JavaScript, hal y
 
 - [Node.js tentang HTTP Client Request](https://nodejs.org/api/http.html#http_class_http_clientrequest)
 - [halaman MDN mengenai HTTP Status](https://developer.mozilla.org/id/docs/Web/HTTP/Status)
+
+* [Common Types dari MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types)
