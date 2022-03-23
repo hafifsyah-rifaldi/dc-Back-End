@@ -11,18 +11,20 @@ const requestListener = (request, response) => {
     if(method === 'GET') {
         response.end('<h1>Hello! Ini method GET</h1>');
     }
-
+// ! Menambahkan logika stream blok POST
     if(method === 'POST') {
-        response.end('<h1>Hai! Ini method POST</h1>');
+      let body = [];
+
+      request.on('data', (chunk) => {
+          body.push(chunk);
+      });
+      request.on('end', () => {
+          body = Buffer.concat(body).toString();
+          const { name } = JSON.parse(body);
+          response.end(`<h1>Hai, ${name}!</h1>`);
+      });
     }
 
-    if(method === 'PUT') {
-        response.end('<h1>Bonjour! Ini method PUT</h1>');
-    }
-
-    if(method === 'DELETE') {
-        response.end('<h1>Salam! Ini method DELETE</h1>');
-    }
 };
 
 
@@ -38,6 +40,4 @@ server.listen(port, host, () => {
 
 // * Lakukan perintah di terminal cmd
 // TODO 1 : > curl -X GET http://localhost:5000
-// TODO 2 : > curl -X POST http://localhost:5000
-// TODO 3 : > curl -X PUT http://localhost:5000
-// TODO 4 : > curl -X DELETE http://localhost:5000
+// TODO 2 : > curl -X POST -H "Content-Type: application/json" http://localhost:5000 -d "{\"name\": \"Dicoding\"}"
