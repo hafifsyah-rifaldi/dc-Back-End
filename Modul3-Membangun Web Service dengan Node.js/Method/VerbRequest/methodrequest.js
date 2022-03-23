@@ -1,6 +1,6 @@
-const requestListener = (request, response) => {
+/* const requestListener = (request, response) => {
     const method = request.method;
-};
+}; */
 
 /*  Atau cara lebih clean
 * menggunakan object destructuring */
