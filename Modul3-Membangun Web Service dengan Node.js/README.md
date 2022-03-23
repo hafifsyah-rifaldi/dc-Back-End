@@ -12,3 +12,4 @@ Yeay! Pada modul ini kita akan membuat web service menggunakan JavaScript, hal y
 ### Dokumentasi
 
 - [Node.js tentang HTTP Client Request](https://nodejs.org/api/http.html#http_class_http_clientrequest)
+- [halaman MDN mengenai HTTP Status](https://developer.mozilla.org/id/docs/Web/HTTP/Status)
