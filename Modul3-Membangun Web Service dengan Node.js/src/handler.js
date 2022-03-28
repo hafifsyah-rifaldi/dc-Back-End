@@ -61,7 +61,7 @@ const getNoteByIdHandler = (request, h) => {
         };
     }
 
-    const response = h.respone({
+    const response = h.response({
         status: 'fail',
         message: 'Catatan tidak ditemukan',
     });
@@ -69,4 +69,41 @@ const getNoteByIdHandler = (request, h) => {
     return response;
 };
 
-module.exports = { addNoteHandler, getAllNotesHandler, getNoteByIdHandler };
+
+// * Menambahkan fungsi editNoteByIdHandler
+const editNoteByIdHandler = (request, h) => {
+    const { id } = request.params; //Mendapatkan nilai id terlebih dahulu sebelum diubah nilai catatannya
+
+    const { title, tags, body } = request.payload; // Dapatkan data yang dikirim client melalui body request
+    const updatedAt = new Date().toISOString(); // Dapatkan nilai terbaru dari updateAt menggunakan new Date().toISOString()
+    
+    const index = notes.findIndex((note ) => note.id === id); // Dapatkan id menggunakan method array findIndex()
+
+    // Menentukan if else jika bernilai -1, maka gagal/catatan tidak ditemukan
+    if (index !== -1) {
+        notes[index] = {
+            ...notes[index],
+            title,
+            tags,
+            body,
+            updatedAt,
+        };
+        
+        const response = h.response({
+            status: 'success',
+            message: 'Catatan berhasil diperbarui',
+        });
+        response.code(200);
+        return response;
+    }
+
+    const response = h.response({
+        status: 'fail',
+        message: 'Gagal memperbarui catatan. Id tidak ditemukan',
+    });
+    response.code(404);
+    return response;
+};
+
+
+module.exports = { addNoteHandler, getAllNotesHandler, getNoteByIdHandler, editNoteByIdHandler };
