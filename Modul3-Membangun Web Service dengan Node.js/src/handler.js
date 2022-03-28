@@ -1,4 +1,4 @@
-const { nano } = require('nanoid'); // import nanoid dari package module library nanoid
+const { nanoid } = require('nanoid'); // import nanoid dari package module library nanoid
 const notes = require('./notes'); // import array dari notes.js
 
 
