@@ -36,9 +36,37 @@ const addNoteHandler = (request, h) => {
     });
     response.code(500);
     return response;
-
-
 };
 
+//* Menambahkan fungsi getAllNotesHandler dan mengembalikan data dengan nilai notes di dalamnya
+const getAllNotesHandler = () => ({
+    status: 'success',
+    data: {
+        notes,
+    },
+});
 
-module.exports = { addNoteHandler };
+//* Menambahkan fungsi getNoteByIdHandler
+const getNoteByIdHandler = (request, h) => {
+    const { id } = request.params; // dapatkan nilai id dari request.params
+    
+    const note = notes.filter((n) => n.id === id)[0]; // dapatkan objek note dengan id tersebut dengan memanfaatkan method array filter()
+
+    if (note !== undefined) {
+        return {
+            status: 'success',
+            data: {
+                note,
+            },
+        };
+    }
+
+    const response = h.respone({
+        status: 'fail',
+        message: 'Catatan tidak ditemukan',
+    });
+    response.code(404);
+    return response;
+};
+
+module.exports = { addNoteHandler, getAllNotesHandler, getNoteByIdHandler };
