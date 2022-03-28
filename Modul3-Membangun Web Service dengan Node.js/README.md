@@ -9,6 +9,15 @@ Yeay! Pada modul ini kita akan membuat web service menggunakan JavaScript, hal y
 - Membangun Web Service menggunakan Hapi.js (Node.js HTTP framework).
 - Membangun RESTful API sederhana.
 
+## Ikhtisar
+
+Anda berada di akhir dari modul Build Web Service using Node.js. Mari kita uraikan materi yang sudah Anda pelajari untuk mempertajam pemahaman.
+
+- Anda sudah belajar cara membangun Web Service dengan menggunakan Node.js secara native. Mulai dari membangun HTTP server hingga menanggapi permintaan dari client.
+- Anda sudah mengetahui apa itu Node.js Web Framework.
+- Anda sudah belajar cara membangun web service dengan menggunakan Hapi Framework menggantikan web service yang dibangun secara native.
+- Anda sudah berhasil membangun RESTful API sederhana untuk mendukung fungsionalitas aplikasi Front-End.
+
 ### Dokumentasi
 
 - [Node.js tentang HTTP Client Request](https://nodejs.org/api/http.html#http_class_http_clientrequest)
