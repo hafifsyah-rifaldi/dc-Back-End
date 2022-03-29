@@ -85,4 +85,31 @@ const getAllBookHandler = (request, h) => {
 };
 
 
-module.exports = { addBookHandler, getAllBookHandler };
+// TODO Kriteria 3 : API dapat menampilkan detail buku
+const getBookIdHandler = (request, h) => {
+    const { id } = request.params;
+    const book = books.filter((book) => book.id === id)[0];
+
+    if (!book) {
+        const response = h.response({
+            status:'fail',
+            message:'Buku tidak ditemukan',
+        });
+        response.code(404);
+    }
+
+    
+        // const response = h.response({
+        //     status:'success',
+        //     data: {
+        //         books,
+        //     }
+        // })
+        // response.code(200);
+        // return h.response;
+
+
+};
+
+
+module.exports = { addBookHandler, getAllBookHandler, getBookIdHandler};
