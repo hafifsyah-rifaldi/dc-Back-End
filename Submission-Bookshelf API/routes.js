@@ -13,12 +13,14 @@ const routes = [
         path: '/books',
         handler: getAllBookHandler,
     },
-    // TODO Kriteria 3 : API dapat menampilkan detail buku
-    {
+     // TODO Kriteria 3 : API dapat menampilkan detail buku
+     {
         method: 'GET',
-        path: 'books/{bookId}',
+        path: '/books/{bookId}',
         handler: getBookIdHandler,
-    }
+    },
+    
+   
 ];
 
 module.exports = routes;
