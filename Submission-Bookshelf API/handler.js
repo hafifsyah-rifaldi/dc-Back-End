@@ -2,7 +2,7 @@ const { nanoid } = require('nanoid'); // Import nanoid dari module
 const books = require('./books') // Import dari books.js
 
 
-// TODO Kriteria 1: API dapat menampilkan seluruh buku
+// TODO Kriteria 1: API dapat menyimpan buku
 const addBookHandler = (request, h) => {
     const { name, year, author, summary, publisher, pageCount, readPage, reading } = request.payload;
 
@@ -41,7 +41,7 @@ const addBookHandler = (request, h) => {
             status: 'success',
             message: 'Buku berhasil ditambahkan',
             data: {
-                bookid: id
+                bookId: id
             },
         });
         response.code(201);
@@ -56,4 +56,32 @@ const addBookHandler = (request, h) => {
     return response;
 };
 
-module.exports = { addBookHandler };
+
+// TODO Kriteria 2 : API dapat menampilkan seluruh buku
+const getBookHandler = (request, h) => {
+    
+    const { id } = request.params; // mengambil nilai id buku
+
+    const book = books.filter((n) => n.id === id)[0] // mendapat objek books dari id
+
+    if (!book) {
+        return{
+            status: 'success',
+            data: {
+                books
+            },
+        };
+    }
+    const response = h.response({
+        status: 'fail',
+        message: 'Buku tidak ditemukan ',
+    });
+    response.code(200);
+    return response;
+};
+
+
+
+
+
+module.exports = { addBookHandler, getBookHandler };
