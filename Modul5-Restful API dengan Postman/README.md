@@ -7,3 +7,13 @@ Pada materi kali ini kita akan belajar bagaimana cara back-end developer melakuk
 - Memasang Postman pada komputer Anda.
 - Mengonsumsi API untuk tujuan pengujian menggunakan Postman.
 - Menuliskan skenario uji otomatis menggunakan Postman.
+
+## Ikhtisar
+
+Anda berada di akhir dari modul Consume and Test RESTful API using Postman. Mari kita uraikan materi yang sudah Anda pelajari untuk mempertajam pemahaman.
+
+Anda sudah mengetahui apa itu Postman.
+Anda dapat memasang Postman pada komputer.
+Anda mampu mengonsumsi API menggunakan Postman.
+Anda bisa menuliskan automating testing pada Postman.
+Anda cakap dalam menjalankan automating testing melalui Postman Collection.
