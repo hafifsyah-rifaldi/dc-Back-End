@@ -58,30 +58,8 @@ const addBookHandler = (request, h) => {
 
 
 // TODO Kriteria 2 : API dapat menampilkan seluruh buku
-const getBookHandler = (request, h) => {
-    
-    const { id } = request.params; // mengambil nilai id buku
-
-    const book = books.filter((n) => n.id === id)[0] // mendapat objek books dari id
-
-    if (!book) {
-        return{
-            status: 'success',
-            data: {
-                books
-            },
+const getAllBookHandler = (request, h) => {
+    const { id } = request.params;
+    const book = books.filter((book) => book.id === id)[0];
         };
-    }
-    const response = h.response({
-        status: 'fail',
-        message: 'Buku tidak ditemukan ',
-    });
-    response.code(200);
-    return response;
-};
-
-
-
-
-
-module.exports = { addBookHandler, getBookHandler };
+module.exports = { addBookHandler, getAllBookHandler };
