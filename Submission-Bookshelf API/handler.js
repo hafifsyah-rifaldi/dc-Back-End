@@ -34,8 +34,7 @@ const addBookHandler = (request, h) => {
     };
     books.push(newBook);
     
-    const isSuccess = books.filter((book) => book.id === id).length > 0; // Memanfaatkan method filter()
-    
+    const isSuccess = books.filter((book) => book.id === id).length > 0; // Memanfaatkan method filter()    
     // isSuccess untuk menentukan respons yang diberikan server
     if (isSuccess) {
         const response = h.response({
