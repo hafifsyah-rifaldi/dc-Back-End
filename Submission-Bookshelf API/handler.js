@@ -61,5 +61,29 @@ const addBookHandler = (request, h) => {
 const getAllBookHandler = (request, h) => {
     const { id } = request.params;
     const book = books.filter((book) => book.id === id)[0];
-        };
+       
+    if (!book) { 
+        const response = h.response({
+            status: 'success',
+            data:{
+                books,
+            },
+        });
+    }
+    const response = h.response({
+        status: 'success',
+        data:{
+            books: books.map((book) => ({
+                id: book.id,
+                name: book.name,
+                publisher: book.publisher
+            }))
+        }
+    })
+    response.code(200);
+    return response;
+
+};
+
+
 module.exports = { addBookHandler, getAllBookHandler };
