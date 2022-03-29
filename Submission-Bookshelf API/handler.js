@@ -82,7 +82,6 @@ const getAllBookHandler = (request, h) => {
     })
     response.code(200);
     return response;
-
 };
 
 
