@@ -55,8 +55,7 @@ const addBookHandler = (request, h) => {
     response.code(500);
     return response;
 };
-
-
+ 
 // TODO Kriteria 2 : API dapat menampilkan seluruh buku
 const getAllBookHandler = (request, h) => {
     const { id } = request.params;
