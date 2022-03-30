@@ -1,4 +1,4 @@
-const { addBookHandler, getAllBookHandler, getBookIdHandler}  = require('./handler');
+const { addBookHandler, getAllBookHandler, getBookIdHandler, editBookIdHandler }  = require('./handler');
 
 const routes = [
     // TODO Kriteria 1: API dapat menyimpan buku
@@ -18,6 +18,12 @@ const routes = [
         method: 'GET',
         path: '/books/{bookId}',
         handler: getBookIdHandler,
+    },
+    // TODO Kriteria 4 : API dapat mengubah data buku
+     {
+        method: 'PUT',
+        path: '/books/{bookId}',
+        handler: editBookIdHandler,
     },
     
    
