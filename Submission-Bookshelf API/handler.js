@@ -60,7 +60,8 @@ const addBookHandler = (request, h) => {
 const getAllBookHandler = (request, h) => {
     const { id } = request.params;
     const book = books.filter((book) => book.id === id)[0];
-       
+         
+    
     if (!book) {
         ({
             status: 'success',
@@ -81,14 +82,17 @@ const getAllBookHandler = (request, h) => {
     })
     response.code(200);
     return response;
+
+
+    
 };
 
 
 // TODO Kriteria 3 : API dapat menampilkan detail buku
 const getBookIdHandler = (request, h) => {
     const { bookId } = request.params; 
+    
     const book = books.filter((book) => book.id === bookId)[0];
-
     if (book !== undefined) {
         const response = h.response({
             status: 'success',
@@ -106,6 +110,7 @@ const getBookIdHandler = (request, h) => {
     });
     response.code(404);
     return response;
+    
 
 };
 
@@ -193,4 +198,5 @@ const deleteBookByIdHandler = (request, h) => {
     return response;  
 };
 
-module.exports = { addBookHandler, getAllBookHandler, getBookIdHandler, editBookIdHandler, deleteBookByIdHandler};
+
+module.exports = { addBookHandler, getAllBookHandler, getBookIdHandler, editBookIdHandler, deleteBookByIdHandler };
