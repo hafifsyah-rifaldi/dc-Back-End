@@ -58,32 +58,58 @@ const addBookHandler = (request, h) => {
  
 // TODO Kriteria 2 : API dapat menampilkan seluruh buku
 const getAllBookHandler = (request, h) => {
-    const { id } = request.params;
-    const book = books.filter((book) => book.id === id)[0];
+    // const { id } = request.params;
+    // const book = books.filter((book) => book.id === id)[0];
          
     
-    if (!book) {
-        ({
-            status: 'success',
-            data:{
-                books,
-            },
-        });
-    }
-    const response = h.response({
+    // if (!book) {
+    //     ({
+    //         status: 'success',
+    //         data:{
+    //             books,
+    //         },
+    //     });
+    // }
+    // const response = h.response({
+    //     status: 'success',
+    //     data:{
+    //         books: books.map((book) => ({
+    //             id: book.id,
+    //             name: book.name,
+    //             publisher: book.publisher
+    //         }))
+    //     }
+    // })
+    // response.code(200);
+    // return response;
+
+    const { name, reading, finished } = request.query;
+
+    let newBooks = [...books];
+
+    if (name)
+        newBooks = newBooks.filter((book) =>
+            book.name.toLowerCase().includes(name.toLowerCase())
+        );
+
+    if (reading === '1') newBooks = newBooks.filter((book) => book.reading);
+    if (reading === '0') newBooks = newBooks.filter((book) => !book.reading);
+
+    if (finished === '1') newBooks = newBooks.filter((book) => book.finished);
+    if (finished === '0') newBooks = newBooks.filter((book) => !book.finished);
+
+    return h.response({
         status: 'success',
-        data:{
-            books: books.map((book) => ({
-                id: book.id,
-                name: book.name,
-                publisher: book.publisher
-            }))
-        }
-    })
-    response.code(200);
-    return response;
-
-
+        data: {
+            books: [
+                ...newBooks.map(({ id, name, publisher }) => ({
+                    id,
+                    name,
+                    publisher,
+                })),
+            ],
+        },
+    });
     
 };
 
